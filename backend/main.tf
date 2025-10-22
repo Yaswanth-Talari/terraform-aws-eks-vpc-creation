@@ -8,7 +8,6 @@ resource "aws_s3_bucket" "other-bucket" {
     lifecycle {
       prevent_destroy = false
     }
-
 }
 
 resource "aws_dynamodb_table" "my-table" {
@@ -19,7 +18,5 @@ resource "aws_dynamodb_table" "my-table" {
   attribute {
     name = "LockID"
     type = "S"
-  }
-    
-  
+  } 
 }
